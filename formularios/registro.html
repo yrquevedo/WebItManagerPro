@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registrar producto</title>
+
+<link rel="stylesheet" href="../css/style.css?v=23">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+    <div class="brand">
+        <i class="bi bi-pc-display"></i>
+        <div>
+            <h2>It Manager Pro</h2>
+            <p>Panel interno</p>
+        </div>
+    </div>
+
+    
+
+    <nav class="menu">
+        <a href="../index.html"><i class="bi bi-house"></i> Inicio</a>
+        <a href="../formularios/gestion.php"><i class="bi bi-speedometer2"></i> Dashboard</a>
+        <a href="../formularios/inventario.php"><i class="bi bi-box-seam"></i> Inventario</a>
+        <a href="../formularios/registro.html" class="activo"><i class="bi bi-plus-circle"></i> Registrar producto</a>
+        <a href="../formularios/consulta.php"><i class="bi bi-search"></i> Consultar producto</a>
+        <a href="../formularios/actualizar.html"><i class="bi bi-pencil-square"></i> Actualizar producto</a>
+        <a href="../formularios/borrar.html"><i class="bi bi-trash"></i> Dar de baja producto</a>
+        <a href="historial.php"><i class="bi bi-clock-history"></i> Historial</a>
+        <a href="usuarios.php"><i class="bi bi-people"></i> Usuarios</a>
+        
+        <a href="contactoAdmin.php"><i class="bi bi-envelope-paper"></i>Contactar administrador</a>
+        <a href="../login/logout.php"><i class="bi bi-box-arrow-right"></i> Cerrar sesión
+    </a>
+    </nav>
+</aside>
+
+<div class="contenedor-panel">
+
+    <div class="form-card">
+
+        <h1><i class="bi bi-plus-circle"></i> Registrar producto</h1>
+
+        <p class="texto-info">
+            Selecciona un producto y sus datos se rellenarán automáticamente.
+        </p>
+
+<form action="../php/insertarProducto.php" method="post" onsubmit="return validarRegistro()">
+
+<label>Producto</label>
+<select name="fnombre" id="producto" required onchange="rellenarProducto()">
+    <option value="">Selecciona un producto</option>
+
+    <option value="Portátil Lenovo IdeaPad">Portátil Lenovo IdeaPad</option>
+    <option value="MacBook Air M4">MacBook Air M4</option>
+    <option value="Dell XPS 13">Dell XPS 13</option>
+    <option value="ASUS ZenBook 14">ASUS ZenBook 14</option>
+
+    <option value="RTX 5070">RTX 5070</option>
+    <option value="NVIDIA RTX 5080">NVIDIA RTX 5080</option>
+    <option value="AMD Ryzen 7 9800X3D">AMD Ryzen 7 9800X3D</option>
+    <option value="Corsair Vengeance 32GB">Corsair Vengeance 32GB</option>
+
+    <option value="SSD Samsung 1TB">SSD Samsung 1TB</option>
+    <option value="SSD Crucial BX500">SSD Crucial BX500</option>
+    <option value="Disco Externo WD 2TB">Disco Externo WD 2TB</option>
+
+    <option value="Monitor LG 27 pulgadas">Monitor LG 27 pulgadas</option>
+    <option value="Samsung Odyssey G5">Samsung Odyssey G5</option>
+    <option value="Dell UltraSharp 27">Dell UltraSharp 27</option>
+
+    <option value="Teclado Logitech MX Keys">Teclado Logitech MX Keys</option>
+    <option value="Ratón Logitech MX Master 3">Ratón Logitech MX Master 3</option>
+    <option value="Webcam Logitech Brio">Webcam Logitech Brio</option>
+    <option value="Auriculares HyperX Cloud III">Auriculares HyperX Cloud III</option>
+
+    <option value="Impresora HP LaserJet">Impresora HP LaserJet</option>
+    <option value="Epson EcoTank ET-2850">Epson EcoTank ET-2850</option>
+    <option value="Brother DCP-L2530DW">Brother DCP-L2530DW</option>
+</select>
+
+            <label>Descripción</label>
+            <input type="text" name="fdescripcion" id="descripcion" readonly required>
+
+            <label>Categoría</label>
+            <input type="text" name="fcategoria" id="categoria" readonly required>
+
+            <label>Marca</label>
+            <input type="text" name="fmarca" id="marca" readonly required>
+
+            <label>Vista previa del producto</label>
+
+            <!-- Campo oculto que enviará la imagen al PHP -->
+            <input type="hidden" name="fimagen" id="imagen">
+
+            <!-- Imagen del producto -->
+            <img src="" id="previewImagen" class="producto-img" style="display:none;">
+
+            <!-- Nombre bonito debajo de la imagen -->
+            <p id="nombreProductoImagen" class="texto-info"></p>
+
+
+            <!-- <img src="" id="previewImagen" class="producto-img" style="display:none;"> -->
+
+            <label>Precio (€)</label>
+            <input type="text" name="fprecio" id="precio" placeholder="Ejemplo: 899.99" required>
+
+            <label>Cantidad</label>
+            <input type="number" name="fcantidad" id="cantidad" placeholder="Ejemplo: 10" required>
+
+            <p id="mensajeError"></p>
+
+            <button type="submit">
+                <i class="bi bi-save"></i> Guardar producto
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="../js/script.js?v=2"></script>
+</body>
+</html>

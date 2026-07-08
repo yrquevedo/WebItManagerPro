@@ -1,0 +1,9 @@
+<?php
+
+return [
+
+    "usuario" => "tu_correo@gmail.com",
+
+    "password" => "tu_contraseña_de_aplicacion"
+
+];

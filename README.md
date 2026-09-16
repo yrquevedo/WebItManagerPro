@@ -153,7 +153,8 @@ WebItManagerPro/
 ├── composer.json
 ├── composer.lock
 └── index.html
-    
+
+
 ---
 
 ## 🗄️ Base de datos

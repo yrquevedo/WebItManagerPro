@@ -171,3 +171,32 @@ La base de datos permite mantener relacionados los productos, usuarios y movimie
 - **Historial de movimientos:** registro de las acciones realizadas dentro del sistema, incluyendo usuario, fecha, producto y detalle de la operación.
 
 Las operaciones sobre la base de datos se realizan desde PHP mediante la conexión definida en el proyecto.
+
+---
+
+## 🔐 Seguridad y configuración
+
+El proyecto incorpora diferentes medidas para proteger el acceso a la aplicación y evitar la publicación de información sensible.
+
+### Control de acceso
+
+- Autenticación mediante usuario y contraseña.
+- Gestión de sesiones mediante PHP.
+- Control de acceso según el rol del usuario.
+- Restricción de determinadas funcionalidades a usuarios autorizados.
+
+### Protección de credenciales
+
+Las credenciales utilizadas para el envío de correos electrónicos se almacenan en un archivo de configuración local que no se incluye en el repositorio.
+
+El archivo:
+
+`config/mail.php`
+
+está excluido mediante `.gitignore` para evitar la publicación de datos sensibles.
+
+El repositorio incluye el archivo:
+
+`config/mail.php.example`
+
+como plantilla para configurar las credenciales necesarias en cada instalación.

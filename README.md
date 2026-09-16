@@ -200,3 +200,40 @@ El repositorio incluye el archivo:
 `config/mail.php.example`
 
 como plantilla para configurar las credenciales necesarias en cada instalación.
+
+---
+
+## 🖥️ Capturas de la aplicación
+
+### Panel de gestión
+
+Vista principal del panel administrativo con información general del inventario y accesos a las principales funcionalidades.
+
+<p align="center">
+  <img src="img/captura-dashboard.png" width="90%" alt="Panel de gestión de It Manager Pro">
+</p>
+
+### Gestión del inventario
+
+Consulta general de los productos registrados, con información de stock, categoría, marca, precio y estado.
+
+<p align="center">
+  <img src="img/captura-inventario.png" width="90%" alt="Inventario de It Manager Pro">
+</p>
+
+### Historial y usuarios
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="img/captura-historial.png" alt="Historial de movimientos">
+    </td>
+    <td width="50%">
+      <img src="img/captura-usuarios.png" alt="Gestión de usuarios">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Historial de movimientos</b></td>
+    <td align="center"><b>Gestión de usuarios</b></td>
+  </tr>
+</table>

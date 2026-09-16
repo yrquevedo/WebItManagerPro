@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/banner-readme.png" alt="Web It Manager Pro">
+  <img src="img/banner-readme1.png" alt="Web It Manager Pro">
 </p>
 
 <div align="center">

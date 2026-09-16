@@ -72,3 +72,19 @@ La aplicación incluye diferentes módulos para la gestión y control del invent
 - ✉️ **Contacto con administrador**
   - Formulario interno de contacto.
   - Envío de mensajes por correo electrónico.
+
+ ---
+
+## 🛠️ Tecnologías utilizadas
+
+| Tecnología | Uso en el proyecto |
+|---|---|
+| **PHP** | Desarrollo de la lógica del servidor y gestión de las operaciones del sistema. |
+| **MySQL** | Almacenamiento y gestión de productos, usuarios e historial de movimientos. |
+| **HTML5** | Estructura de las diferentes páginas de la aplicación. |
+| **CSS3** | Diseño visual, distribución de elementos y adaptación de la interfaz. |
+| **Bootstrap Icons** | Iconografía utilizada en la interfaz del sistema. |
+| **JavaScript** | Funcionalidades e interacción en el lado del cliente. |
+| **Composer** | Gestión de dependencias PHP del proyecto. |
+| **PHPMailer** | Envío de correos electrónicos y avisos de stock desde la aplicación. |
+    

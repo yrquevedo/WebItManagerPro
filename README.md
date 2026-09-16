@@ -205,7 +205,15 @@ como plantilla para configurar las credenciales necesarias en cada instalación.
 
 ## 🖥️ Capturas de la aplicación
 
-### Panel de gestión
+### 🔐 Acceso al sistema
+
+Pantalla de inicio de sesión para el acceso al panel de gestión mediante usuario y contraseña.
+
+<p align="center">
+  <img src="img/captura-login.png" width="75%" alt="Acceso administrador de It Manager Pro">
+</p>
+
+### 📊 Panel de gestión
 
 Vista principal del panel administrativo con información general del inventario y accesos a las principales funcionalidades.
 
@@ -213,7 +221,7 @@ Vista principal del panel administrativo con información general del inventario
   <img src="img/captura-dashboard.png" width="90%" alt="Panel de gestión de It Manager Pro">
 </p>
 
-### Gestión del inventario
+### 📦 Gestión del inventario
 
 Consulta general de los productos registrados, con información de stock, categoría, marca, precio y estado.
 
@@ -221,19 +229,47 @@ Consulta general de los productos registrados, con información de stock, catego
   <img src="img/captura-inventario.png" width="90%" alt="Inventario de It Manager Pro">
 </p>
 
-### Historial y usuarios
+### ➕ Registro de productos
+
+Formulario para incorporar nuevos productos al inventario con sus principales datos e información de stock.
+
+<p align="center">
+  <img src="img/captura-registro-producto.png" width="90%" alt="Registro de productos de It Manager Pro">
+</p>
+
+### 👥 Usuarios e historial de movimientos
+
+El sistema permite gestionar los usuarios y consultar el registro de las acciones realizadas dentro de la aplicación.
 
 <table>
   <tr>
     <td width="50%">
-      <img src="img/captura-historial.png" alt="Historial de movimientos">
+      <img src="img/captura-usuarios.png" alt="Gestión de usuarios">
     </td>
     <td width="50%">
-      <img src="img/captura-usuarios.png" alt="Gestión de usuarios">
+      <img src="img/captura-historial.png" alt="Historial de movimientos">
     </td>
   </tr>
   <tr>
-    <td align="center"><b>Historial de movimientos</b></td>
     <td align="center"><b>Gestión de usuarios</b></td>
+    <td align="center"><b>Historial de movimientos</b></td>
   </tr>
 </table>
+
+### 📧 Avisos de stock
+
+Generación y envío de avisos por correo electrónico cuando es necesario comunicar información relacionada con el stock de un producto.
+
+<p align="center">
+  <img src="img/captura-aviso-stock.png" width="65%" alt="Aviso de stock de It Manager Pro">
+</p>
+
+### 📄 Exportación de información
+
+El inventario puede exportarse para facilitar la consulta y utilización de la información fuera de la aplicación.
+
+<p align="center">
+  <img src="img/captura-exportacion.png" width="90%" alt="Exportación del inventario de It Manager Pro">
+</p>
+
+---

@@ -154,3 +154,18 @@ WebItManagerPro/
 ├── composer.lock
 └── index.html
     
+---
+
+## 🗄️ Base de datos
+
+La aplicación utiliza **MySQL** para almacenar y gestionar la información del sistema.
+
+La base de datos permite mantener relacionados los productos, usuarios y movimientos realizados dentro de la aplicación.
+
+### Información gestionada
+
+- **Productos:** código, nombre, descripción, precio, stock, categoría, marca y estado.
+- **Usuarios:** datos de acceso, rol y estado del usuario.
+- **Historial de movimientos:** registro de las acciones realizadas dentro del sistema, incluyendo usuario, fecha, producto y detalle de la operación.
+
+Las operaciones sobre la base de datos se realizan desde PHP mediante la conexión definida en el proyecto.

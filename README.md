@@ -84,7 +84,73 @@ La aplicación incluye diferentes módulos para la gestión y control del invent
 | **HTML5** | Estructura de las diferentes páginas de la aplicación. |
 | **CSS3** | Diseño visual, distribución de elementos y adaptación de la interfaz. |
 | **Bootstrap Icons** | Iconografía utilizada en la interfaz del sistema. |
-| **JavaScript** | Funcionalidades e interacción en el lado del cliente. |
+| **JavaScript** | Interactividad y funcionalidades en el lado del cliente. |
 | **Composer** | Gestión de dependencias PHP del proyecto. |
 | **PHPMailer** | Envío de correos electrónicos y avisos de stock desde la aplicación. |
+
+---
+
+## 📁 Estructura del proyecto
+
+El proyecto está organizado en diferentes directorios según la función de cada componente:
+
+```text
+WebItManagerPro/
+│
+├── bd/
+│   ├── conexion.php
+│   └── variables.php
+│
+├── config/
+│   └── mail.php.example
+│
+├── css/
+│   └── style.css
+│
+├── formularios/
+│   ├── actualizar.html
+│   ├── avisoStock.php
+│   ├── borrar.html
+│   ├── consulta.php
+│   ├── contactoAdmin.php
+│   ├── gestion.php
+│   ├── historial.php
+│   ├── inventario.php
+│   ├── registro.html
+│   └── usuarios.php
+│
+├── img/
+│   └── Imágenes y recursos gráficos
+│
+├── includes/
+│   ├── permisos.php
+│   └── seguridad.php
+│
+├── js/
+│   └── script.js
+│
+├── login/
+│   ├── login.php
+│   ├── logout.php
+│   └── validarLogin.php
+│
+├── php/
+│   ├── actualizarProducto.php
+│   ├── borrarProducto.php
+│   ├── cambiarEstadoUsuario.php
+│   ├── consultaProducto.php
+│   ├── eliminarProducto.php
+│   ├── enviarAvisoStock.php
+│   ├── enviarCorreo.php
+│   ├── exportarExcel.php
+│   ├── exportarPDF.php
+│   ├── guardarPrecio.php
+│   ├── guardarUsuario.php
+│   ├── insertarProducto.php
+│   └── reactivarProducto.php
+│
+├── .gitignore
+├── composer.json
+├── composer.lock
+└── index.html
     
